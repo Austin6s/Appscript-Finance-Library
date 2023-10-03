@@ -5,7 +5,8 @@ This code was used in Google Appscript to provide a suite of tools help automate
 ## Features
 
 - Data import from monthly spreadsheet into yearly spreadsheet;
-- User input collection for data import using HTML;
-- Data reset -> clears data in manual entered cells only while keeping sheet structure and formulas;
+- User input collection for data import using HTML & CSS;
+- Data reset -> clears data in manual entered cells only, while keeping sheet structure and formulas;
 - Currency converter for all accounting data;
 - Dependent dropdowns;
+- Automated inventory tracking that collects sales data from monthly spreadsheets to update.
