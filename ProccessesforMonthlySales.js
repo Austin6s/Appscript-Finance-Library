@@ -192,6 +192,12 @@ function populateStartingInventory() {
 
   // Find the name of the previous month
   var previousMonth = Object.keys(months).find(key => months[key] === previousMonthValue);
+  if (previousMonth){
+    Logger.log(previousMonth);
+  } else {
+    Logger.log("Could not find previous month");
+    return;
+  }
 
   // Access the parent folder of the active spreadsheet
   var parentFolder = DriveApp.getFileById(activeSpreadsheet.getId()).getParents().next();
