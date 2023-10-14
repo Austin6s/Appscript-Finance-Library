@@ -101,9 +101,9 @@ function setCurrencyFormatForRange() {
   var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = spreadsheet.getSheetByName('Summary'); // Set the "Summary" sheet as the active sheet.
   var summaryRange = sheet.getRange('C5:E9')
-  var grossRevRange = sheet.getRange('Income!H5:J20'); // Adjust the range as needed.
-  var grossCogsRange = sheet.getRange('Income!M5:O20');
-  var grossProfitRange = sheet.getRange('Income!R5:T20');
+  var grossRevRange = sheet.getRange('Income!C5:E20'); // Adjust the range as needed.
+  var grossCogsRange = sheet.getRange('Income!H5:J20');
+  var grossProfitRange = sheet.getRange('Income!M5:O20');
   var expensesRange = sheet.getRange('Expenses!C5:E55');
   var salesTrackerRange1 = sheet.getRange('Sales Tracker!H3:I');
   var salesTrackerRange2 = sheet.getRange('Sales Tracker!K3:R');
@@ -196,7 +196,7 @@ function populateStartingInventory() {
     Logger.log(previousMonth);
   } else {
     Logger.log("Could not find previous month");
-    return;
+    return ;
   }
 
   // Access the parent folder of the active spreadsheet
